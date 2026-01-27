@@ -1,10 +1,10 @@
-# Grupo SysBR - Site Corporativo
+# GrupoSys - Site Corporativo
 
-Site institucional do Grupo SysBR, desenvolvido com base na apresentação corporativa da empresa.
+Site institucional do GrupoSys, desenvolvido com base na apresentação corporativa da empresa.
 
 ## 🚀 Sobre o Projeto
 
-Site moderno e responsivo que apresenta os serviços, diferenciais e verticais de atuação do Grupo SysBR, uma holding com mais de 25 anos de experiência no mercado de tecnologia.
+Site moderno e responsivo que apresenta os serviços, diferenciais e verticais de atuação do GrupoSys, uma holding com mais de 25 anos de experiência no mercado de tecnologia.
 
 ## 📋 Características
 
@@ -110,8 +110,8 @@ O site utiliza a fonte **Inter** do Google Fonts. Para alterar, modifique o link
 
 ## 📄 Licença
 
-© 2025 Grupo SysBR. Todos os direitos reservados.
+© 2025 GrupoSys. Todos os direitos reservados.
 
 ---
 
-Desenvolvido com base na apresentação corporativa do Grupo SysBR
+Desenvolvido com base na apresentação corporativa do GrupoSys
