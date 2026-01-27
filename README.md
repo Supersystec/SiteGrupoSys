@@ -38,9 +38,19 @@ SiteGrupoSys/
 
 ## 🌐 Como Usar
 
+### Local
 1. Abra o arquivo `index.html` em qualquer navegador moderno
 2. Navegue pelas diferentes seções usando o menu superior
 3. O site é totalmente responsivo e funciona em dispositivos móveis
+
+### GitHub Pages
+O site está publicado automaticamente através do GitHub Pages. Acesse:
+- **URL:** https://[seu-username].github.io/SiteGrupoSys/
+
+Para publicar ou atualizar o site:
+1. Faça commit das alterações: `git add . && git commit -m "Update site"`
+2. Push para o GitHub: `git push origin main`
+3. O GitHub Pages atualizará automaticamente em alguns minutos
 
 ## 📱 Responsividade
 
