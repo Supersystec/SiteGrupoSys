@@ -1,44 +1,24 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0f2b5b;stop-opacity:1" />
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="#1e3a8a"/>
   
-  <!-- Logo Central -->
-  <g transform="translate(600, 200)">
-    <!-- Background circle -->
-    <circle cx="0" cy="0" r="80" fill="#c8a960" opacity="0.2"/>
-    <circle cx="0" cy="0" r="70" fill="#c8a960" opacity="0.3"/>
-    
-    <!-- Logo icon -->
-    <rect x="-50" y="-50" width="100" height="100" rx="12" fill="#1e3a8a"/>
-    <text x="0" y="15" font-family="Arial, sans-serif" font-size="42" font-weight="bold" text-anchor="middle" fill="white">GS</text>
-    <rect x="-30" y="35" width="60" height="6" fill="#c8a960"/>
-  </g>
+  <!-- Logo -->
+  <rect x="500" y="150" width="200" height="200" rx="20" fill="#c8a960"/>
+  <rect x="520" y="170" width="160" height="160" rx="12" fill="#1e3a8a"/>
+  <text x="600" y="280" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="white">GS</text>
+  <rect x="540" y="300" width="120" height="8" fill="#c8a960"/>
   
   <!-- Title -->
-  <text x="600" y="350" font-family="Arial, sans-serif" font-size="64" font-weight="800" text-anchor="middle" fill="white">
+  <text x="600" y="420" font-family="Arial, sans-serif" font-size="72" font-weight="bold" text-anchor="middle" fill="white">
     GrupoSys
   </text>
   
   <!-- Subtitle -->
-  <text x="600" y="410" font-family="Arial, sans-serif" font-size="28" font-weight="400" text-anchor="middle" fill="#c8a960">
+  <text x="600" y="480" font-family="Arial, sans-serif" font-size="32" font-weight="normal" text-anchor="middle" fill="#c8a960">
     Soluções em Tecnologia
   </text>
   
-  <!-- Description -->
-  <text x="600" y="460" font-family="Arial, sans-serif" font-size="22" font-weight="300" text-anchor="middle" fill="white" opacity="0.9">
-    Hub de inovação com mais de 25 anos
-  </text>
-  <text x="600" y="490" font-family="Arial, sans-serif" font-size="22" font-weight="300" text-anchor="middle" fill="white" opacity="0.9">
-    Sistemas SaaS para comércio, varejo e indústria
-  </text>
-  
   <!-- URL -->
-  <text x="600" y="570" font-family="Arial, sans-serif" font-size="20" font-weight="500" text-anchor="middle" fill="#c8a960">
+  <text x="600" y="550" font-family="Arial, sans-serif" font-size="24" font-weight="normal" text-anchor="middle" fill="white">
     www.gruposys.com.br
   </text>
 </svg>
