@@ -718,6 +718,7 @@ section {
     color: var(--primary-color);
     margin-bottom: 0.75rem;
     font-weight: 700;
+    text-align: center;
 }
 
 .vertical-card p {
@@ -726,6 +727,7 @@ section {
     font-size: 0.93rem;
     margin-bottom: 1.5rem;
     flex-grow: 1;
+    text-align: center;
 }
 
 .vertical-card .btn-small {
@@ -764,6 +766,87 @@ section {
     box-shadow: 0 4px 20px rgba(15, 43, 91, 0.25);
     transform: translateY(-2px);
     background: var(--primary-light);
+}
+
+.vertical-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: auto;
+    padding-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.vertical-social {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: var(--white);
+    border: none;
+    text-decoration: none;
+    transition: var(--transition);
+    font-size: 0.9rem;
+}
+
+.social-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Cores específicas das redes sociais - estado normal */
+.social-btn[title="Site"] {
+    background: #0066cc;
+}
+
+.social-btn[title="Facebook"] {
+    background: #1877f2;
+}
+
+.social-btn[title="Instagram"] {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.social-btn[title="WhatsApp"] {
+    background: #25d366;
+}
+
+/* Efeito hover mantém a mesma cor com mais intensidade */
+.social-btn[title="Site"]:hover {
+    background: #0052a3;
+    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.4);
+}
+
+.social-btn[title="Facebook"]:hover {
+    background: #166fe5;
+    box-shadow: 0 4px 12px rgba(24, 119, 242, 0.4);
+}
+
+.social-btn[title="Instagram"]:hover {
+    background: linear-gradient(45deg, #e0832b 0%, #d55a35 25%, #c91f3a 50%, #b81a5a 75%, #a61577 100%);
+    box-shadow: 0 4px 12px rgba(225, 48, 108, 0.4);
+}
+
+.social-btn[title="WhatsApp"]:hover {
+    background: #20ba56;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+}
+
+.social-btn:hover i {
+    transform: scale(1.1);
+}
+
+.social-btn i {
+    transition: transform 0.3s ease;
 }
 
 /* ========== NUMBERS ========== */
@@ -1297,6 +1380,16 @@ section {
 }
 
 @media (max-width: 480px) {
+    .vertical-actions {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: stretch;
+    }
+
+    .vertical-social {
+        justify-content: center;
+    }
+
     .hero-title {
         font-size: 1.8rem;
     }
