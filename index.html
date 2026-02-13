@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="favicon-16x16.svg">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="favicon-32x32.svg">
 </head>
 <body>
     <!-- Header/Navigation -->
@@ -17,7 +20,8 @@
             <div class="container">
                 <div class="nav-content">
                     <div class="logo">
-                        <h1><span class="highlight">GRUPOSYS</span></h1>
+                        <img src="favicon.svg" alt="GrupoSys Logo" class="logo-icon">
+                        <h1><span class="grupo">GRUPO</span><span class="sys">SYS</span></h1>
                     </div>
                     <ul class="nav-menu" id="navMenu">
                         <li><a href="#home">Início</a></li>
@@ -311,93 +315,99 @@
     <section id="team" class="team">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Nossa Equipe</h2>
+                <h2 class="section-title">Líderes de Equipe</h2>
                 <p class="section-subtitle">Profissionais dedicados ao seu sucesso</p>
             </div>
-            <div class="team-grid">
-                <div class="team-member">
-                    <div class="member-photo">
-                        <img src="https://media.licdn.com/dms/image/v2/C5603AQFAtuCLH_Q4gA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516764627035?e=1772668800&v=beta&t=BolPQLih7k1_tL-MLQyO3EH9eA7nlBA4qvvg9cQUp4I" alt="Silvano Matta">
+            <div class="team-carousel-wrapper">
+                <div class="team-grid" id="teamCarousel">
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <img src="https://media.licdn.com/dms/image/v2/C5603AQFAtuCLH_Q4gA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516764627035?e=1772668800&v=beta&t=BolPQLih7k1_tL-MLQyO3EH9eA7nlBA4qvvg9cQUp4I" alt="Silvano Matta">
+                        </div>
+                        <div class="member-info">
+                            <h3>Silvano Matta</h3>
+                            <p class="member-role">CEO - Gvinci</p>
+                            <p class="member-bio">Liderança estratégica com mais de 25 anos de experiência em tecnologia e negócios. Especialista em transformação digital e desenvolvimento de sistemas SaaS.</p>
+                            <div class="member-social">
+                                <a href="https://www.linkedin.com/in/silvanomatta/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="mailto:contato@gruposys.com.br" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="member-info">
-                        <h3>Silvano Matta</h3>
-                        <p class="member-role">CEO - Gvinci</p>
-                        <p class="member-bio">Liderança estratégica com mais de 25 anos de experiência em tecnologia e negócios. Especialista em transformação digital e desenvolvimento de sistemas SaaS.</p>
-                        <div class="member-social">
-                            <a href="https://www.linkedin.com/in/silvanomatta/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                            <a href="mailto:silvano@supersys.com.br" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <img src="https://media.licdn.com/dms/image/v2/C4D03AQFXFpyOOu-miA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1638699540362?e=1772668800&v=beta&t=USwU0TzFte7z228fs-0obhWvjkjtMHAjTlVsIiC1phk" alt="Cristian Couto Ramos">
+                        </div>
+                        <div class="member-info">
+                            <h3>Cristian Couto Ramos</h3>
+                            <p class="member-role">CEO - Wynk</p>
+                            <p class="member-bio">Experiência na gestão de produtos, pessoas, negócios, financeira e tecnologia da informação. Especialista em desenvolvimento corporativo, gestão de áreas, times, projetos e portfólio de produtos/serviços.</p>
+                            <div class="member-social">
+                                <a href="https://www.linkedin.com/in/cristiancoutoramos/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <img src="https://lps.grupostudio.com.br/wp-content/uploads/2025/06/espe02.webp" alt="Marcelos Kaiber">
+                        </div>
+                        <div class="member-info">
+                            <h3>Marcelos Kaiber</h3>
+                            <p class="member-role">COO - Business Tax Solutions</p>
+                            <p class="member-bio">Advogado tributarista. Palestrante, perito e com especialidade em atuar em entidades de classe, bem como com gestão de rede de escritórios de direito tributário.</p>
+                            <div class="member-social">
+                                <a href="https://www.linkedin.com/in/marcelo-maxim%C3%ADlian-kaiber-7833776b/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <img src="https://media.licdn.com/dms/image/v2/C4E03AQEdQgPR_rOVag/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1619184791496?e=1772668800&v=beta&t=HuMfMADmFWWOOqDYNQbOkaAZTe58WX5lMIWjz4jkix8" alt="Ângela Cristina">
+                        </div>
+                        <div class="member-info">
+                            <h3>Ângela Cristina</h3>
+                            <p class="member-role">CEO - Supersys</p>
+                            <p class="member-bio">Expert em gestão empresarial e ERP. Especialista em gestão de equipes e otimização de processos.</p>
+                            <div class="member-social">
+                                <a href="https://www.linkedin.com/in/%C3%A2ngela-cristina-matta-b4ab0b16b/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <img src="https://media.licdn.com/dms/image/v2/C4E03AQGyKKvzQuuSKg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1575029661528?e=1772668800&v=beta&t=MBsDNCwaqEgY-BR3fd5kQYPOaWsBpP1BdGFBdKC2WF4" alt="Danilo Pimentel">
+                        </div>
+                        <div class="member-info">
+                            <h3>Danilo Pimentel</h3>
+                            <p class="member-role">Head de Tecnologia - Wynk</p>
+                            <p class="member-bio">Full-stack developer e engenheiro de software a mais de 20 anos. Expertise comprovada em análise e design orientado a objetos. </p>
+                            <div class="member-social">
+                                <a href="https://www.linkedin.com/in/danilopimentel/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <img src="https://media.licdn.com/dms/image/v2/C4E03AQF3Megknb9eXA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1608758733319?e=1772668800&v=beta&t=z_Oqbr97DfZo3K1m78UMeC_ovTLrRhTxUoU2VKCd4Y0" alt="Adélcio">
+                        </div>
+                        <div class="member-info">
+                            <h3>Adélcio Marcos</h3>
+                            <p class="member-role">CTO - OnDoctor</p>
+                            <p class="member-bio">Profissional com mais de 20 anos de experiência na área de desenvolvimento de software. Certificado Microsoft em segurança e Banco de Dados.</p>
+                            <div class="member-social">
+                                <a href="https://www.linkedin.com/in/adelcioml/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="team-member">
-                    <div class="member-photo">
-                        <img src="https://media.licdn.com/dms/image/v2/C4D03AQFXFpyOOu-miA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1638699540362?e=1772668800&v=beta&t=USwU0TzFte7z228fs-0obhWvjkjtMHAjTlVsIiC1phk" alt="Cristian Couto Ramos">
-                    </div>
-                    <div class="member-info">
-                        <h3>Cristian Couto Ramos</h3>
-                        <p class="member-role">CEO - Wynk</p>
-                        <p class="member-bio">Experiência na gestão de produtos, pessoas, negócios, financeira e tecnologia da informação. Especialista em desenvolvimento corporativo, gestão de áreas, times, projetos e portfólio de produtos/serviços.</p>
-                        <div class="member-social">
-                            <a href="https://www.linkedin.com/in/cristiancoutoramos/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <div class="member-photo">
-                        <img src="https://lps.grupostudio.com.br/wp-content/uploads/2025/06/espe02.webp" alt="Marcelos Kaiber">
-                    </div>
-                    <div class="member-info">
-                        <h3>Marcelos Kaiber</h3>
-                        <p class="member-role">COO - Business Tax Solutions</p>
-                        <p class="member-bio">Advogado tributarista. Palestrante, perito e com especialidade em atuar em entidades de classe, bem como com gestão de rede de escritórios de direito tributário.</p>
-                        <div class="member-social">
-                            <a href="https://www.linkedin.com/in/marcelo-maxim%C3%ADlian-kaiber-7833776b/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <div class="member-photo">
-                        <img src="https://media.licdn.com/dms/image/v2/C4E03AQEdQgPR_rOVag/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1619184791496?e=1772668800&v=beta&t=HuMfMADmFWWOOqDYNQbOkaAZTe58WX5lMIWjz4jkix8" alt="Ângela Cristina">
-                    </div>
-                    <div class="member-info">
-                        <h3>Ângela Cristina</h3>
-                        <p class="member-role">CEO - Supersys</p>
-                        <p class="member-bio">Expert em gestão empresarial e ERP. Especialista em gestão de equipes e otimização de processos.</p>
-                        <div class="member-social">
-                            <a href="https://www.linkedin.com/in/%C3%A2ngela-cristina-matta-b4ab0b16b/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <div class="member-photo">
-                        <img src="https://media.licdn.com/dms/image/v2/C4E03AQGyKKvzQuuSKg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1575029661528?e=1772668800&v=beta&t=MBsDNCwaqEgY-BR3fd5kQYPOaWsBpP1BdGFBdKC2WF4" alt="Danilo Pimentel">
-                    </div>
-                    <div class="member-info">
-                        <h3>Danilo Pimentel</h3>
-                        <p class="member-role">Head de Tecnologia - Wynk</p>
-                        <p class="member-bio">Full-stack developer e engenheiro de software a mais de 20 anos. Talentoso com expertise comprovada em análise e design orientado a objetos. Excepcional registro supervisionando todas as facetas do ciclo de vida de desenvolvimento de software, desde análise e design até implementação e manutenção.</p>
-                        <div class="member-social">
-                            <a href="https://www.linkedin.com/in/danilopimentel/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <div class="member-photo">
-                        <img src="https://media.licdn.com/dms/image/v2/C4E03AQF3Megknb9eXA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1608758733319?e=1772668800&v=beta&t=z_Oqbr97DfZo3K1m78UMeC_ovTLrRhTxUoU2VKCd4Y0" alt="Adélcio">
-                    </div>
-                    <div class="member-info">
-                        <h3>Adélcio Marcos</h3>
-                        <p class="member-role">CTO - OnDoctor</p>
-                        <p class="member-bio">Profissional com mais de 20 anos de experiência na área de desenvolvimento de software. Certificado Microsoft em segurança e Banco de Dados.</p>
-                        <div class="member-social">
-                            <a href="https://www.linkedin.com/in/adelcioml/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn" id="carouselPrev" aria-label="Anterior">&#8592;</button>
+                    <button class="carousel-btn" id="carouselNext" aria-label="Próximo">&#8594;</button>
                 </div>
             </div>
         </div>
@@ -429,11 +439,15 @@
                         <div class="contact-icon">📧</div>
                         <div class="contact-details">
                             <h3>Email</h3>
-                            <a href="mailto:silvano@supersys.com.br">silvano@supersys.com.br</a>
+                            <a href="mailto:contato@gruposys.com.br">contato@gruposys.com.br</a>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <div class="contact-icon">📱</div>
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 9.89-5.335 9.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                        </div>
                         <div class="contact-details">
                             <h3>Telefone</h3>
                             <a href="tel:+556140420123">+55 61 4042-0123</a>
@@ -466,7 +480,10 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <h2>GRUPO<span class="highlight">SYS</span></h2>
+                    <div class="footer-logo-header">
+                        <img src="favicon-negative.svg" alt="GrupoSys Logo" class="footer-logo-icon">
+                        <h2>GRUPO<span class="highlight">SYS</span></h2>
+                    </div>
                     <p>Soluções em Tecnologia desde 1998</p>
                 </div>
                 <div class="footer-links">
@@ -482,7 +499,7 @@
                 </div>
                 <div class="footer-contact">
                     <h3>Contato</h3>
-                    <p>Email: silvano@supersys.com.br</p>
+                    <p>Email: contato@gruposys.com.br</p>
                     <p>Tel: +55 61 4042-0123</p>
                 </div>
             </div>

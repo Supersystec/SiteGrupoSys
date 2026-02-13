@@ -185,3 +185,45 @@ document.querySelectorAll('form').forEach(form => {
         e.preventDefault();
     });
 });
+
+// Team Carousel
+const teamCarousel = document.getElementById('teamCarousel');
+const carouselPrev = document.getElementById('carouselPrev');
+const carouselNext = document.getElementById('carouselNext');
+
+if (teamCarousel && carouselPrev && carouselNext) {
+    const scrollAmount = 344;
+    let autoScrollInterval;
+
+    const startAutoScroll = () => {
+        autoScrollInterval = setInterval(() => {
+            const maxScroll = teamCarousel.scrollWidth - teamCarousel.clientWidth;
+            if (teamCarousel.scrollLeft >= maxScroll - 5) {
+                teamCarousel.scrollTo({ left: 0, behavior: 'smooth' });
+            } else {
+                teamCarousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        }, 3000);
+    };
+
+    const stopAutoScroll = () => {
+        clearInterval(autoScrollInterval);
+    };
+
+    carouselNext.addEventListener('click', () => {
+        stopAutoScroll();
+        teamCarousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        startAutoScroll();
+    });
+
+    carouselPrev.addEventListener('click', () => {
+        stopAutoScroll();
+        teamCarousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        startAutoScroll();
+    });
+
+    teamCarousel.addEventListener('mouseenter', stopAutoScroll);
+    teamCarousel.addEventListener('mouseleave', startAutoScroll);
+
+    startAutoScroll();
+}
