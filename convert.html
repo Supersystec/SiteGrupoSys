@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convert SVG to PNG</title>
+</head>
+<body>
+    <canvas id="canvas" width="1200" height="630"></canvas>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        
+        // Background
+        ctx.fillStyle = '#1e3a8a';
+        ctx.fillRect(0, 0, 1200, 630);
+        
+        // Logo background
+        ctx.fillStyle = '#c8a960';
+        ctx.fillRect(500, 150, 200, 200);
+        
+        // Logo inner
+        ctx.fillStyle = '#1e3a8a';
+        ctx.fillRect(520, 170, 160, 160);
+        
+        // Logo text
+        ctx.fillStyle = 'white';
+        ctx.font = 'bold 48px Arial';
+        ctx.textAlign = 'center';
+        ctx.fillText('GS', 600, 280);
+        
+        // Logo underline
+        ctx.fillStyle = '#c8a960';
+        ctx.fillRect(540, 300, 120, 8);
+        
+        // Title
+        ctx.fillStyle = 'white';
+        ctx.font = 'bold 72px Arial';
+        ctx.fillText('GrupoSys', 600, 420);
+        
+        // Subtitle
+        ctx.fillStyle = '#c8a960';
+        ctx.font = '32px Arial';
+        ctx.fillText('Soluções em Tecnologia', 600, 480);
+        
+        // URL
+        ctx.fillStyle = 'white';
+        ctx.font = '24px Arial';
+        ctx.fillText('www.gruposys.com.br', 600, 550);
+        
+        // Convert to base64
+        const dataURL = canvas.toDataURL('image/png');
+        console.log('Base64 PNG:');
+        console.log(dataURL);
+        
+        // Also create a download link
+        const link = document.createElement('a');
+        link.download = 'og-image.png';
+        link.href = dataURL;
+        link.click();
+    </script>
+</body>
+</html>
