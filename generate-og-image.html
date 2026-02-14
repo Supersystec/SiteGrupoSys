@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gerar OG Image GrupoSys</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+        #canvas {
+            border: 2px solid #333;
+            display: block;
+            margin: 20px auto;
+            background: white;
+        }
+        .controls {
+            text-align: center;
+            margin: 20px;
+        }
+        button {
+            background: #1e3a8a;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        button:hover {
+            background: #2563eb;
+        }
+        .status {
+            text-align: center;
+            font-size: 18px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Gerador de Imagem OG - GrupoSys</h1>
+    <canvas id="canvas" width="1200" height="630"></canvas>
+    
+    <div class="controls">
+        <button onclick="generateImage()">Gerar Imagem</button>
+        <button onclick="downloadImage()">Baixar og-image.png</button>
+    </div>
+    
+    <div class="status" id="status"></div>
+    
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        let imageGenerated = false;
+        
+        function generateImage() {
+            // Fundo azul escuro
+            ctx.fillStyle = '#1e3a8a';
+            ctx.fillRect(0, 0, 1200, 630);
+            
+            // Logo - quadrado com borda dourada
+            const logoSize = 280;
+            const logoX = (1200 - logoSize) / 2;
+            const logoY = 100;
+            
+            // Borda dourada externa
+            ctx.fillStyle = '#c8a960';
+            ctx.fillRect(logoX - 10, logoY - 10, logoSize + 20, logoSize + 20);
+            
+            // Fundo azul do logo
+            ctx.fillStyle = '#1e3a8a';
+            ctx.fillRect(logoX, logoY, logoSize, logoSize);
+            
+            // Texto "GS" no logo
+            ctx.fillStyle = 'white';
+            ctx.font = 'bold 120px Arial, sans-serif';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText('GS', logoX + logoSize/2, logoY + logoSize/2 - 10);
+            
+            // Linha dourada abaixo do GS
+            const lineWidth = 140;
+            const lineX = logoX + (logoSize - lineWidth) / 2;
+            const lineY = logoY + logoSize/2 + 50;
+            ctx.fillStyle = '#c8a960';
+            ctx.fillRect(lineX, lineY, lineWidth, 8);
+            
+            // Título "GrupoSys"
+            ctx.fillStyle = 'white';
+            ctx.font = 'bold 72px Arial, sans-serif';
+            ctx.fillText('GrupoSys', 600, 460);
+            
+            // Subtítulo
+            ctx.fillStyle = '#c8a960';
+            ctx.font = '32px Arial, sans-serif';
+            ctx.fillText('Soluções em Tecnologia', 600, 520);
+            
+            // URL
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+            ctx.font = '24px Arial, sans-serif';
+            ctx.fillText('www.gruposys.com.br', 600, 580);
+            
+            imageGenerated = true;
+            document.getElementById('status').innerHTML = '<span style="color: green;">✓ Imagem gerada com sucesso!</span>';
+        }
+        
+        function downloadImage() {
+            if (!imageGenerated) {
+                alert('Por favor, gere a imagem primeiro!');
+                return;
+            }
+            
+            canvas.toBlob((blob) => {
+                const url = URL.createObjectURL(blob);
+                const link = document.createElement('a');
+                link.href = url;
+                link.download = 'og-image.png';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                URL.revokeObjectURL(url);
+                
+                document.getElementById('status').innerHTML = '<span style="color: green;">✓ Download iniciado! Salve o arquivo como "og-image.png" na pasta do projeto.</span>';
+            }, 'image/png', 1.0);
+        }
+        
+        // Gerar automaticamente ao carregar
+        window.onload = function() {
+            generateImage();
+        };
+    </script>
+</body>
+</html>
