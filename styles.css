@@ -1060,6 +1060,19 @@ section {
     margin: 0 auto;
 }
 
+.clients-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.clients-image img {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    display: block;
+}
+
 /* ========== CONTACT ========== */
 .contact {
     background: var(--white);
